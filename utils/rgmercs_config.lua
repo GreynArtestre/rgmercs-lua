@@ -78,15 +78,15 @@ for k, v in pairs(Config.ExpansionNameToID) do Config.ExpansionIDToName[v] = k e
 Config.DefaultConfig = {
     -- [ UTILITIES ] --
     ['MountItem']         = { DisplayName = "Mount Item", Category = "Utilities", Tooltip = "Item to use to cast Mount", Default = "", },
-    ['DoMount']           = { DisplayName = "Do Mount", Category = "Utilities", Tooltip = "0 = Disabled, 1 = Enabled, 2 = Dismount but Keep Buff", Default = 0, Min = 0, Max = 2, },
+    ['DoMount']           = { DisplayName = "Use Mount", Category = "Utilities", Tooltip = "0 = Disabled, 1 = Enabled, 2 = Dismount but Keep Buff", Default = 0, Min = 0, Max = 2, },
     ['ShrinkItem']        = { DisplayName = "Shrink Item", Category = "Utilities", Tooltip = "Item to use to Shrink yourself", Default = "", },
-    ['DoShrink']          = { DisplayName = "Do Shrink", Category = "Utilities", Tooltip = "Enable auto shrinking", Default = false, },
+    ['DoShrink']          = { DisplayName = "Use Shrink", Category = "Utilities", Tooltip = "Enable auto shrinking", Default = false, },
     ['PriorityHealing']   = { DisplayName = "Priority Healing", Category = "Utilities", Tooltip = "Prioritize Healing over Combat", Default = false, },
     ['ModRodManaPct']     = { DisplayName = "Mod Rod Mana Pct", Category = "Utilities", Tooltip = "What Mana Pct to hit before using a rod.", Default = 30, Min = 1, Max = 99, },
     ['ClarityPotion']     = { DisplayName = "Clarity Potion", Category = "Utilities", Tooltip = "Name of your Clarity Pot", Default = "Distillate of Clarity", },
 
     -- [ MEDITATION ] --
-    ['DoMed']             = { DisplayName = "Do Meditate", Category = "Meditation", Tooltip = "0 = No Auto Med, 1 = Auto Med Out of Combat, 2 = Auto Med In Combat", Default = 1, Min = 0, Max = 2, },
+    ['DoMed']             = { DisplayName = "Use Meditate", Category = "Meditation", Tooltip = "0 = No Auto Med, 1 = Auto Med Out of Combat, 2 = Auto Med In Combat", Default = 1, Min = 0, Max = 2, },
     ['HPMedPct']          = { DisplayName = "Med HP Pct", Category = "Meditation", Tooltip = "What HP Pct to hit before medding.", Default = 60, Min = 1, Max = 99, },
     ['ManaMedPct']        = { DisplayName = "Med Mana Pct", Category = "Meditation", Tooltip = "What Mana Pct to hit before medding.", Default = 30, Min = 1, Max = 99, },
     ['EndMedPct']         = { DisplayName = "Med Endurance Pct", Category = "Meditation", Tooltip = "What Endurance Pct to hit before medding.", Default = 30, Min = 1, Max = 99, },
@@ -119,7 +119,7 @@ Config.DefaultConfig = {
 
     -- [ BUFF ] --
     ['DoTwist']           = { DisplayName = "Enable Bard Twisting", Category = "Buffs", Tooltip = "Use MQ2Twist", Default = true, },
-    ['DoBuffs']           = { DisplayName = "Do Buffs", Category = "Buffs", Tooltip = "Do Non-Class Specific Buffs.", Default = true, },
+    ['DoBuffs']           = { DisplayName = "Use Buffs", Category = "Buffs", Tooltip = "Do Non-Class Specific Buffs.", Default = true, },
 
     -- [ FELLOWSHIP ] --
     ['DoFellow']          = { DisplayName = "Enable Fellowship Insignia", Category = "Fellowship", Tooltip = "Use fellowship insignia automatically.", Default = true, },
